@@ -1,0 +1,22 @@
+body{
+    background-color: #efefef;
+  }
+  .bar1 {
+  fill:green;
+}
+
+.legend {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 50%;
+        text-align: right;
+    }
+.axis {
+  font: 10px "Helvetica Neue";
+  font-size: 12px;
+  font-weight: bold;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: red;
+}

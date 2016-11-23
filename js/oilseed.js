@@ -7,7 +7,7 @@ var isHeader=true;
 
 		/*Reading the .CSV file line by line */
 const rl = readline.createInterface({
-	input: fs.createReadStream('CSV/Production-Department_of_Agriculture_and_Cooperation_1.csv')
+	input: fs.createReadStream('../CSV/Production-Department_of_Agriculture_and_Cooperation_1.csv')
 });
 
 /*Callback Function for fetching the data*/
@@ -55,7 +55,7 @@ rl.on('line', function(line) {
 		jsonArray.push(tempData);
 	}
 	isHeader=false;
-	fs.writeFileSync("JSON/oilseedOne.json",JSON.stringify(jsonArray),encoding="utf8");
+	fs.writeFileSync("../JSON/oilseedOne.json",JSON.stringify(jsonArray),encoding="utf8");
 	tempData={};
 	
 });
